@@ -1,0 +1,516 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');	
+
+*{
+	margin: 0;
+	padding:  0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a{
+	color: rgb(255, 255, 255);
+}
+
+ul li h4{
+	color: rgb(255, 255, 255);
+}
+a{
+	outline: none;
+	text-decoration: none;
+	padding: 2px;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+}
+h1{
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: normal;
+}
+h2{
+	color: rgb(118, 133, 145);
+	font-size: 20px;
+}
+h3{
+	color: rgb(105, 105, 105);
+}
+.h3Negro{
+	font-size: 14px;
+	font-weight: normal;
+}
+h4{
+	color:black;
+	font-weight: normal;
+	font-size: 16px;
+}
+.h4{
+	color: rgb(255, 255, 255);
+	font-weight: normal;
+	font-size: 14px;
+}
+p{
+	color: rgb(26, 26, 26);
+}
+li{
+	position: relative;
+}
+
+.azul{
+	color: rgb(62, 181, 149);
+	text-align: center;
+	padding: 2px;
+}
+.px14Normal{
+	font-weight: normal;
+	font-size: 14px;
+	margin: 2px;
+}
+#frase{
+	color: rgb(255, 255, 255);
+	font-size: 12px;
+	font-weight: normal;
+}
+.px14Bold{
+	font-weight: bold;
+	font-size: 14px;
+	margin: 2px;
+}
+.marginMax{
+	margin-top: 10px;
+}
+.iconos{
+	width: 25px; height: 25px;
+}
+.iconos:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+
+ul{
+	list-style-type: none;
+}
+
+/*Forma de mi Navegador Principal*/
+
+#uperNav, #navegadorUno, #imagenEncabezado, #principal, #datosCompra, #formularioContacto, #otrosCLientes, #footer{
+	padding: 10px;
+} 
+
+body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto, auto, auto, auto, auto, auto, auto, auto, auto;
+	grid-template-areas: "navUp" "seccionNavegacion" "imagenEncabezado" "important" "productos" "datosCompra" "formularioContacto" "otrosClientes" "footer";	
+}
+
+/*Seccion de cabeza - Nombre y Navegador*/
+#navUp{
+	grid-area: navUp;
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: black;
+	padding-top: 2px;
+	position: sticky;
+	top: 0px;
+	align-items: flex-end;
+	z-index: 1;
+}
+	#navUp img{
+		width: 16px;
+		height: 16px;
+		padding: 4px;
+	}
+	#navUp a{
+		font-size: 12px;
+		font-weight: normal;
+		color: white;
+		padding: 4px;
+	}
+	#navUp a:hover{
+		font-weight: bold;
+	}
+	#black li{
+		display: inline-block;
+	}
+
+/*Seccion de Navegacion de productos*/
+#navegadorUno{
+	grid-area: seccionNavegacion;
+	display: flex;
+	justify-content: space-between;
+	background-color: rgb(62, 181, 149);
+	align-items: flex-end;
+	position: sticky;
+	top: 30px;
+	border-bottom: inset white 2px;
+	}
+	#navegadorUno li{
+		display: inline-block;
+	}
+	#miNombre{
+		padding-left: 4px;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-left: 8px;
+		border-left: white solid 2px;
+	}
+	#cabeza{
+		display: flex;
+		width: auto;
+		align-items: baseline;
+		border-left: white solid 2px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+		.rotate:hover{
+			transform: rotateZ(360deg);
+			transition: 2s;
+		}
+	#cabezal{
+		display: flex;
+		width: auto;
+		align-items: baseline;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+		/* Menu desplegable	 */
+		#navegadorUno li{
+			display: inline-block;
+			padding: 5px;
+			color: white;
+			position: relative;
+		}
+		#navegadorUno a:hover{
+			color: black;
+		}
+		#cabeza li{
+			position: relative;
+		}
+		#cabeza ul{
+			position: absolute;
+			display: none;
+			background-color: rgb(62, 181, 149);
+		}
+		#cabeza ul li{
+			display: block;
+			width: 150px;
+			text-align: left;
+		}
+		#cabeza li:hover ul{
+			display: block;
+		}
+
+/*Imagenes de Cabeza - Productos destacados*/
+#imagenEncabezado{
+	display: flex;
+	grid-area: imagenEncabezado;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: rgba(245, 245, 245, 0.918);
+}
+	#imagenEncabezado img{
+		width: 18vw;
+	}
+
+/*Important*/
+#important{
+	grid-area: important;
+	background-color: rgba(170, 176, 181, 0.9);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+	#important img{
+		width: 50px;
+		padding-right: 10px;
+	}
+	#important h3{
+		font-weight: bold;
+		color: black;
+	}
+	#important h4{
+		font-weight: normal;
+		color: black;
+	}
+	#important div{
+		display: inline-block;
+		align-items: center;
+	}
+	.impor{
+		display: flex;
+		flex-direction: row;
+	}
+
+/*Para presentar los productos*/
+#productos{
+	grid-area: productos;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+	.articulo{
+		display: flex;
+		width: 45vw;
+		flex-direction: column;
+		justify-content: flex-end;
+		text-align: center;
+		margin-bottom: 20px;
+		background-color: rgba(245, 245, 245, 0.918);
+		border-bottom: solid 1px rgba(201, 201, 201, 0.5);
+	}
+	.articulo img{
+		width: 95%;
+	}
+	.articulo h4{
+		font-weight: bold;
+	}
+	.articulo h4{
+		padding-bottom: 2px;
+		padding-top: 4px;
+	}
+	#productos .articulo img:hover{
+		transform: scale(1.1);
+		transition: transform 0.5s;
+	}
+
+	#productos .articulo:hover{
+		background-color: darkgrey;
+		transition: all 1s;
+	}
+
+	#productos .articulo h4:hover{
+		font-weight: bolder;
+		color: white;
+		transition: color 0.5s;
+	}
+
+#datosCompra{
+	background-color: black;
+	grid-area: datosCompra;
+	display: flex;
+	flex-direction: column;
+	width: auto;
+}
+	#datosCompra h3{
+		margin-bottom: 8px;
+		font-size: 16px;
+	}
+	#datosCompra a{
+		text-decoration: none;
+		width: 80px;
+		padding: 2px;
+		margin-top: 6px;
+		border-radius: 6px;
+		background-color: rgba(170, 176, 181, 0.9);
+		text-align: center;
+	}
+
+#formularioContacto{
+	margin-bottom: 10px;
+	grid-area: formularioContacto;
+	background-color: rgb(62, 181, 149);
+	align-content: center;
+	border-top: solid 1px white;
+	background-color: black;
+}
+
+	#formularioContacto h4{
+		color: white;
+		padding-bottom: 2px;
+	}
+	#formularioContacto fieldset{
+		border: none;
+	}
+	#formularioContacto textarea{
+		width: 80vw;
+	}
+	#formularioContacto .boton{
+		background-color: rgba(170, 176, 181, 0.9);
+		color: white;
+		padding: 2px;
+		border: none;
+		border-radius: 2px;
+		width: 60px;
+	}
+	#formularioContacto fieldset{
+		color: white;
+	}
+	#formularioContacto legend{
+		padding-bottom: 2px;
+		padding-top: 2px;
+	}
+
+
+#otrosClientes{
+	grid-area: otrosClientes;
+	background-color: rgba(245, 245, 245, 0.918);
+}
+	#otrosClientes section{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	#otrosClientes .articulo{
+		background-color: rgba(245, 245, 245, 0);
+	}
+	#otrosClientes .articulo img:hover{
+		transform: scale(1.3);
+		transition: transform 0.5s;
+	}
+		
+
+#footer{
+	grid-area: footer;
+	background-color: rgb(105, 105, 105);
+	display: flex;
+	flex-direction: row;
+}
+	#footer section{
+		padding-right: 4px;
+	}
+	#footer a:hover{
+		color: black;
+	}
+	#wa{
+		position: fixed;
+		bottom: 4px;
+		right: 4px;
+		width: 60px;
+	}
+	#wa:hover{
+		transform: scale(1.1);
+	}
+
+@media only screen and (min-width: 768px){
+	body{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto, auto, auto, auto, auto, auto, auto, auto;
+		grid-template-areas: 
+			"navUp"
+			"seccionNavegacion"
+			"imagenEncabezado"
+			"important"
+			"productos"
+			"seccion"
+			"otrosClientes"
+			"footer";
+	}
+
+	#navegadorUno #miNombre{
+		width: 20%;
+	}
+	#navegadorUno #cabezal{
+		width: 55%;
+		justify-content: space-around;
+		align-items: center;
+	}
+	#navegadorUno #cabeza{
+		width: 25%;
+		justify-content: space-around;
+	}
+	#cabezal form{
+		width: 80%;
+	}
+	#cabezal form .buscar{
+		width: 60%;
+	}
+
+
+
+	.articulo{
+		width: 24vw;
+	}
+
+	#seccion{
+		grid-area: seccion;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: black;
+		}
+		#datosCompra{
+			padding: 0px;
+			margin-right: 4px;
+			width: 40%;
+
+		}
+		#formularioContacto{
+			width: 40%;
+			padding: 0px;
+			padding-left: 6px;
+		}
+			#formularioContacto textarea{
+				width: 96%;
+			}
+	}
+
+@media only screen and (min-width: 1024px){
+	body{
+		display: grid;
+		grid-template-columns: 78vw 22vw;
+		grid-template-rows: auto auto auto auto auto auto auto auto;
+		grid-template-areas: 
+			"navUp navUp"
+			"seccionNavegacion seccionNavegacion"
+			"imagenEncabezado imagenEncabezado"
+			"important important"
+			"productos seccion"
+			"productos seccion"
+			"productos otrosClientes"
+			"footer footer";
+	}
+
+	#seccion{
+		grid-area: seccion;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content:space-between;
+		padding: 6px;
+		width: 20vw;
+	}
+
+	#productos{
+		display: flex;
+		align-items: top;
+		flex-wrap: wrap;
+	}
+
+	#productos .articulo{
+		width: 30%;
+	}
+	
+	#datosCompra{
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	
+	#formularioContacto{
+		width: 100%;
+	}
+
+	#otrosClientes{
+		width: 20vw;
+		margin-top: 6px;
+		background-color: rgba(170, 176, 181, 0.9);
+		padding: 6px;
+	}
+	#otrosClientes .articulo{
+		width: 12vw;
+	}
+	#otrosClientes h2{
+		color: white;
+		font-size: 16px;
+	}
+
+}

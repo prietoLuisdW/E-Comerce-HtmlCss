@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');	
+
+*{
+	margin: 0;
+	padding:  0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	outline: none;
+	text-decoration: none;
+	padding: 2px;
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+}
+a:hover{
+	color:black;
+}
+h1{
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.iconos{
+	width: 25px; height: 25px;
+}
+#seccion{
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: normal;
+}
+.h4{
+	color: rgb(255, 255, 255);
+	font-weight: normal;
+	font-size: 14px;
+}
+ul{
+	list-style-type: none;
+}
+
+/*Forma de mi Navegador Principal*/
+
+#navUp, #encabezadoVistas, #multimedia, #nosotros, #politicas, #footer{
+	padding: 10px;
+} 
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "navUp" "encabezadoVistas" "multimedia" "nosotros" "politicas" "footer";
+}
+
+/*Seccion de cabeza - Nombre y Navegador*/
+#navUp{
+	grid-area: navUp;
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: black;
+	padding-top: 2px;
+	position: sticky;
+	top: 0px;
+	align-items: flex-end;
+	z-index: 1;
+}
+	#navUp img{
+		width: 16px;
+		height: 16px;
+		padding: 4px;
+	}
+	#navUp a{
+		font-size: 12px;
+		font-weight: normal;
+		color: white;
+		padding: 4px;
+	}
+	#navUp a:hover{
+		font-weight: bold;
+	}
+	#black li{
+		display: inline-block;
+	}
+
+#encabezadoVistas{
+	grid-area: encabezadoVistas;
+	display: flex;
+	background-color: rgb(62, 181, 149);
+	position: sticky;
+	top: 40px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	align-items: center;
+}
+#miNombre{
+		display: flex;
+		flex-direction: row;
+}
+
+
+#multimedia{
+    grid-area: multimedia;
+	justify-content: center;
+}
+
+#nosotros{
+    grid-area: nosotros;
+}
+
+#politicas{
+    grid-area: politicas;
+    background-color: rgb(62, 181, 149);
+	position: sticky;
+	bottom: 0px;
+}
+	#politicas ul li{
+		display: inline-block;
+	}
+	#politicas ul{
+		display: flex;
+		justify-content: space-around;
+	}
+
+#footer{
+	grid-area: footer;
+	background-color: rgb(105, 105, 105);
+	display: flex;
+	flex-direction: row;
+}

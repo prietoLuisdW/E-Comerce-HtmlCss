@@ -1,0 +1,427 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');	
+
+*{
+	margin: 0;
+	padding:  0;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+nav ul li a{
+	color: rgb(255, 255, 255);
+}
+ul li h4{
+	color: rgb(255, 255, 255);
+}
+a{
+	outline: none;
+	text-decoration: none;
+	padding: 2px;
+	color: rgb(255, 255, 255);
+}
+h1{
+	color: rgb(26, 26, 26);
+}
+h2{
+	color: rgb(118, 133, 145);
+	font-size: 20px;
+}
+h3{
+	color: rgb(105, 105, 105);
+}
+h4{
+	color: rgb(26, 26, 26);
+}
+.h4{
+	color: rgb(255, 255, 255);
+}
+p{
+	color: rgb(26, 26, 26);
+}
+li{
+	position: relative;
+}
+
+.azul{
+	color: rgb(62, 181, 149);
+	text-align: center;
+	padding: 2px;
+}
+.px14Normal{
+	font-weight: normal;
+	font-size: 14px;
+	margin: 2px;
+}
+.px14Bold{
+	font-weight: bold;
+	font-size: 14px;
+	margin: 2px;
+}
+.marginMax{
+	margin-top: 10px;
+}
+a img{
+	width: 25px; height: 25px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+/*Forma de mi Navegador Principal*/
+section nav{
+	display: inline-block;
+}
+#seccionNavegacion{
+	background-color: rgb(222, 168, 0);
+	padding-top: 4px;
+	position: sticky;
+	top: 73px;
+	width: 100%;
+	border-top: 0.5px solid white;
+}
+#navegadorUno{
+	text-align: left;
+	width: 65%;
+	box-sizing: border-box;
+}
+#navegadorUno a:hover{
+	color: black;
+}
+#navegadorUno h4{
+	font-weight: normal;
+}
+#navegadorUno li{
+	display: inline-block;
+	padding: 5px;
+}
+#navegadorUno form{
+	display: inline-block;
+	padding: 5px;
+}
+#navegadorDos{
+	text-align: right;
+	align-content: right;
+	float: right;
+}
+#navegadorDos h4{
+	font-weight: normal;
+	text-align: right;
+}
+#navegadorDos li{
+	display: inline-block;
+	padding: 5px;
+}
+#navegadorDos a:hover{
+	color: black;
+}
+
+/*Mi Buscador y Ordenador*/
+#buscarOrdenar h3{
+	display: inline-block;
+}
+
+#espacioBusqueda{
+	width: 77%;
+}
+
+#espacioBusqueda form{
+	width: 90%;
+	padding: 0;
+}
+#espacioBusqueda form input{
+	width: 90%;
+	border: none;
+	height: 25px;
+}
+/*Forma de mi Navegador de Cabeza*/
+#uperNav{
+	background-color: rgb(222, 168, 0);
+	width: 100%;
+	position: sticky;
+	top: 0;
+}
+#uperNav div, #uperNav nav{
+	display: inline-block;
+	padding: 6px 8px;
+}
+
+#navPrincipal{
+	text-align: right;
+	float: right;
+}
+#navPrincipal li{
+	display: inline-block;
+	padding: 5px;
+	color: white;
+	position: relative;
+}
+#navPrincipal a:hover{
+	color: black;
+}
+
+#navPrincipal, #cabeza li{
+	position: relative;
+}
+#cabeza ul{
+	position: absolute;
+	display: none;
+	background-color: rgb(222, 168, 0);
+}
+#cabeza ul li{
+	display: block;
+	width: 150px;
+	text-align: left;
+}
+#cabeza li:hover ul{
+	display: block;
+}
+
+
+#miNombre{
+	text-align: left;
+	align-content: left;
+	padding: 5px;
+}
+#miNombre h1{
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	padding: 2px 0px;
+	display: inline-block;
+}
+
+#frase{
+	font-size: 15px;
+	color: rgb(255, 255, 255);
+	font-weight: lighter;
+}
+#seccion{
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	font-size: 22px;
+}
+
+#logo{
+	width: 50px; height: 50px;
+}
+
+/*Forma de mi Footer*/
+#footer{
+	width: 100%;
+	background-color: rgb(105, 105, 105);
+	clear: all;
+	padding-left: 4px;
+	height: 150px;
+	display: flex;
+	flex-direction: row;
+}
+#footer h4{
+	font-weight: normal;
+	font-size: 12px;
+	padding: 2px;
+}
+#footer a{
+	font-weight: normal;
+	font-size: 12px;
+	padding: 2px;
+}
+#footer a:hover{
+	color: black;
+}
+
+#footer section{
+	padding: 4px;
+}
+
+/*Forma de mis Imagenes de Encabezad*/
+#imagenEncabezado{
+	display: flex;
+	justify-content:space-around;
+}
+#imagenEncabezado img{
+	width: 19.7%;
+	height: 250px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/*Forma de mis Articulos*/
+
+#principal{
+	display: flex;
+	flex-direction: row;
+	margin: 4px;
+	justify-content: space-between;
+
+}
+#filtros{
+	width: 18%;
+	border-right: 1px solid rgba(168, 192, 206, 0.5);
+	border-top: 1px solid rgba(168, 192, 206, 0.5);
+	margin-top: 2px;
+	z-index: -1;
+}
+#filtros form{
+	position: sticky;
+	top: 120px;
+}
+
+#productos{
+	display: flex;
+	width: 60%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#compraYContacto{
+	display: flex;
+	width: 20%;
+	flex-direction: column;
+}
+
+.articulo{
+	border: 1px solid;
+	border-color: rgba(168, 192, 206, 0.5);
+	width: 250px;
+	height: 300px;
+	padding: 2px;
+	margin-bottom: 8px;
+}
+.articulo h4{
+	margin: 0;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgb(118, 133, 145);
+}
+
+.articulo img{
+	width: 98%;
+	height: 80%;
+}
+
+#datosCompra{
+	margin-top: 4px;
+	margin-right: 2px;
+	text-align: left;
+	border: 1px solid;
+	border-color: rgba(168, 192, 206, 0.5);
+	width: 100%;
+	padding: 4px;
+}
+
+#datosCompra h3{
+	font-weight: bold;
+	font-size: 14px;
+}
+#datosCompra h4{
+	font-weight: normal;
+	font-size: 14px;
+	color: rgb(118, 133, 145)
+}
+
+#formularioContacto{
+	width: 100%;
+	margin-top: 8px;
+	margin-right: 2px;
+	position: sticky;
+	top: 120px;
+	z-index: -1;
+}
+#otrosProductos{
+	clear: both;
+	width: 100%;
+	margin: 4px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+/*General para las Vistas*/
+#encabezadoVistas{
+	background-color: rgb(222, 168, 0);
+}
+#encabezadoVistas #miNombre{
+	display: inline-block;
+}
+#encabezadoVistas #navPrincipal{
+	display: inline-block;
+	float: right;
+}
+#encabezadoVistas #miNombre h2{
+	font-size: 18px;
+	font-weight: normal;
+}
+
+/*Especial para Conozcanos*/
+#politicas{
+	background-color: rgb(222, 168, 0);
+	margin-bottom: 100px;
+}
+#politicas li{
+	display: inline-block;
+	padding: 5px 10px;
+	text-decoration: underline;
+}
+header{
+	margin-top: 5px;
+	padding: 5px;
+}
+
+#nosotros{
+	margin-top: 4px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+#nosotros h3, #nosotros h4{
+	margin-top: 8px;
+}
+
+#nosotros p{
+	margin-top: 4px;
+}
+
+/*Especial para Cuenta*/
+
+#formularioRegistro{
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	width: 40%;
+}
+
+/*Especial para Peticiones*/
+#formularioPeticion{
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 50px;
+	width: 40%;
+}
+
+/*Especial para Politicas*/
+#politica{
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+#politica p{
+	padding: 5px;
+}
+
+/*Medios de Pago*/
+#mediosDePago article{
+	border: 1px solid rgba(168, 192, 206, 0.3);
+	width: 300px;
+	height: 400px;
+	padding: 5px;
+	margin: 10px;
+}
+#mediosDePago{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/*Tipografias:  ;https://www.w3schools.com/cssref/css_websafe_fonts.asp*/

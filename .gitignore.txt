@@ -1,0 +1,3 @@
+node_modules/
+wireframe.txt
+Cambio en SEO.v1.txt

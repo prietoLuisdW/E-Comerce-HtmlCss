@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');	
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#navBarOne{
+    background-color: rgb(62, 181, 149);  
+}
+.color-white{
+    color: white;
+}
+.tituloPrincipal{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.help{
+    font-size: 16px;
+    font-weight: normal;
+}
+.hover-Black:hover{
+    color: black;
+}
+
+.iconos{
+    width: 25px; height: 25px;
+    display: block;
+}
+.iconos:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+.px-m4{
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.rotate:hover{
+    transform: rotateZ(360deg);
+    transition: 2s;
+}
+.ancho-50{
+    width: 48%;
+}
+.dis-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer{
+	grid-area: footer;
+	background-color: rgb(105, 105, 105);
+	display: flex;
+	flex-direction: row;
+}
+    #footer section{
+        padding-right: 4px;
+    }
+    #footer a:hover{
+        color: black;
+    }
+    #wa{
+        position: fixed;
+        bottom: 4px;
+        right: 4px;
+        width: 60px;
+    }
+    #wa:hover{
+        transform: scale(1.1);
+    }
+    #footer a{
+        display: inline-block;
+        outline: none;
+        text-decoration: none;
+        padding: 2px;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+    }
+    #footer h4{
+        color: white;
+        font-size: 14px;
+    }
+    #footer ul{
+        list-style-type: none;
+    }
+    #footer img{
+        margin-left: 20px;
+    }
